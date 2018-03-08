@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0727CF8120362ABE00359C18 /* DogProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8020362ABE00359C18 /* DogProfileViewController.m */; };
+		0727CF8420362D6400359C18 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8320362D6400359C18 /* EditProfileViewController.m */; };
+		0727CF8720363D2700359C18 /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8620363D2700359C18 /* FindTableViewController.m */; };
+		0727CF8A20363D4900359C18 /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8920363D4900359C18 /* ProfileCell.m */; };
+		07490D63202CA97B0013ECAB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07490D62202CA97B0013ECAB /* GoogleService-Info.plist */; };
+		075780812045D0A100610EAF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075780802045D0A100610EAF /* MapViewController.m */; };
+		075780842046332600610EAF /* EditProfilePopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 075780832046332600610EAF /* EditProfilePopOverViewController.m */; };
+		078053FA202A0C6F00D911C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 078053F9202A0C6F00D911C0 /* AppDelegate.m */; };
+		07805403202A0C6F00D911C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07805401202A0C6F00D911C0 /* Main.storyboard */; };
+		07805405202A0C6F00D911C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07805404202A0C6F00D911C0 /* Assets.xcassets */; };
+		07805408202A0C6F00D911C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07805406202A0C6F00D911C0 /* LaunchScreen.storyboard */; };
+		0780540B202A0C6F00D911C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0780540A202A0C6F00D911C0 /* main.m */; };
+		07805415202A0C6F00D911C0 /* GeoWoofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07805414202A0C6F00D911C0 /* GeoWoofTests.m */; };
+		07805420202A0C6F00D911C0 /* GeoWoofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0780541F202A0C6F00D911C0 /* GeoWoofUITests.m */; };
+		0780542F202A12EF00D911C0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0780542E202A12EF00D911C0 /* ProfileViewController.m */; };
+		078CBC0B202A300C000EB952 /* DogListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 078CBC0A202A300C000EB952 /* DogListTableViewController.m */; };
+		078CBC0E202A3050000EB952 /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 078CBC0D202A3050000EB952 /* Profile.m */; };
+		078CBC14202A3612000EB952 /* DogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 078CBC13202A3612000EB952 /* DogCell.m */; };
+		078CBC17202A3E36000EB952 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 078CBC16202A3E36000EB952 /* Dog.m */; };
+		07FE2E81202CE367007FC7D0 /* TourAppPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FE2E80202CE367007FC7D0 /* TourAppPageViewController.m */; };
+		07FE2E87202CE66B007FC7D0 /* TourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07FE2E86202CE66B007FC7D0 /* TourViewController.m */; };
+		8179EA68B122797DFCF4882C /* libPods-GeoWoofTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4DA2860410BF6FF94159A2 /* libPods-GeoWoofTests.a */; };
+		DA174BB744B5D3227B686F62 /* libPods-GeoWoofUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8D30C3535935529498CE6E /* libPods-GeoWoofUITests.a */; };
+		DBD0885050987C9D6B704E66 /* libPods-GeoWoof.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7A553B94A01FA8BB7D0578 /* libPods-GeoWoof.a */; };
+		FB045C7320400E4800ABA812 /* WatchProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB045C7220400E4800ABA812 /* WatchProfileViewController.m */; };
+		FB045C762040155C00ABA812 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = FB045C752040155C00ABA812 /* Route.m */; };
+		FB229F47203D6F7B00B72791 /* DogCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB229F46203D6F7B00B72791 /* DogCollectionViewCell.m */; };
+		FB229F4A203D6F8B00B72791 /* ImagesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB229F49203D6F8B00B72791 /* ImagesCollectionViewCell.m */; };
+		FB3035982049457200B1DF58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3035962049444000B1DF58 /* CoreLocation.framework */; };
+		FBCC8775202B001200A1860A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCC8774202B001200A1860A /* LoginViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07805411202A0C6F00D911C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078053ED202A0C6F00D911C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078053F4202A0C6F00D911C0;
+			remoteInfo = GeoWoof;
+		};
+		0780541C202A0C6F00D911C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 078053ED202A0C6F00D911C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 078053F4202A0C6F00D911C0;
+			remoteInfo = GeoWoof;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0727CF7F20362ABE00359C18 /* DogProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogProfileViewController.h; sourceTree = "<group>"; };
+		0727CF8020362ABE00359C18 /* DogProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogProfileViewController.m; sourceTree = "<group>"; };
+		0727CF8220362D6400359C18 /* EditProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		0727CF8320362D6400359C18 /* EditProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		0727CF8520363D2700359C18 /* FindTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindTableViewController.h; sourceTree = "<group>"; };
+		0727CF8620363D2700359C18 /* FindTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindTableViewController.m; sourceTree = "<group>"; };
+		0727CF8820363D4900359C18 /* ProfileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileCell.h; sourceTree = "<group>"; };
+		0727CF8920363D4900359C18 /* ProfileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileCell.m; sourceTree = "<group>"; };
+		07490D62202CA97B0013ECAB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0757807F2045D0A100610EAF /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		075780802045D0A100610EAF /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		075780822046332600610EAF /* EditProfilePopOverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditProfilePopOverViewController.h; sourceTree = "<group>"; };
+		075780832046332600610EAF /* EditProfilePopOverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditProfilePopOverViewController.m; sourceTree = "<group>"; };
+		078053F5202A0C6F00D911C0 /* GeoWoof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoWoof.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078053F8202A0C6F00D911C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		078053F9202A0C6F00D911C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07805402202A0C6F00D911C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07805404202A0C6F00D911C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07805407202A0C6F00D911C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07805409202A0C6F00D911C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0780540A202A0C6F00D911C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07805410202A0C6F00D911C0 /* GeoWoofTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoWoofTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07805414202A0C6F00D911C0 /* GeoWoofTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoWoofTests.m; sourceTree = "<group>"; };
+		07805416202A0C6F00D911C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0780541B202A0C6F00D911C0 /* GeoWoofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoWoofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0780541F202A0C6F00D911C0 /* GeoWoofUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoWoofUITests.m; sourceTree = "<group>"; };
+		07805421202A0C6F00D911C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0780542D202A12EF00D911C0 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		0780542E202A12EF00D911C0 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		078CBC09202A300C000EB952 /* DogListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogListTableViewController.h; sourceTree = "<group>"; };
+		078CBC0A202A300C000EB952 /* DogListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogListTableViewController.m; sourceTree = "<group>"; };
+		078CBC0C202A3050000EB952 /* Profile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		078CBC0D202A3050000EB952 /* Profile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		078CBC12202A3612000EB952 /* DogCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogCell.h; sourceTree = "<group>"; };
+		078CBC13202A3612000EB952 /* DogCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogCell.m; sourceTree = "<group>"; };
+		078CBC15202A3E36000EB952 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		078CBC16202A3E36000EB952 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		07FE2E7F202CE367007FC7D0 /* TourAppPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TourAppPageViewController.h; sourceTree = "<group>"; };
+		07FE2E80202CE367007FC7D0 /* TourAppPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourAppPageViewController.m; sourceTree = "<group>"; };
+		07FE2E85202CE66B007FC7D0 /* TourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TourViewController.h; sourceTree = "<group>"; };
+		07FE2E86202CE66B007FC7D0 /* TourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TourViewController.m; sourceTree = "<group>"; };
+		0CCB649AA27D8E10EC82B932 /* Pods-GeoWoof.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoWoof.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoWoof/Pods-GeoWoof.release.xcconfig"; sourceTree = "<group>"; };
+		3CBE909BF089642863AA9D05 /* Pods-GeoWoofTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoWoofTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoWoofTests/Pods-GeoWoofTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B4DA2860410BF6FF94159A2 /* libPods-GeoWoofTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoWoofTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EF8809052EE6C46907D06EA /* Pods-GeoWoofUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoWoofUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoWoofUITests/Pods-GeoWoofUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7732B2B086D9CB611664AEF9 /* Pods-GeoWoofUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoWoofUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoWoofUITests/Pods-GeoWoofUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E4CFD4577E1F61A33B791C0 /* Pods-GeoWoofTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoWoofTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoWoofTests/Pods-GeoWoofTests.release.xcconfig"; sourceTree = "<group>"; };
+		A33224BA6BEE1D36DEC5452C /* Pods-GeoWoof.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoWoof.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoWoof/Pods-GeoWoof.debug.xcconfig"; sourceTree = "<group>"; };
+		BE7A553B94A01FA8BB7D0578 /* libPods-GeoWoof.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoWoof.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8D30C3535935529498CE6E /* libPods-GeoWoofUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeoWoofUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB045C7120400E4800ABA812 /* WatchProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchProfileViewController.h; sourceTree = "<group>"; };
+		FB045C7220400E4800ABA812 /* WatchProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchProfileViewController.m; sourceTree = "<group>"; };
+		FB045C742040155C00ABA812 /* Route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		FB045C752040155C00ABA812 /* Route.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+		FB229F45203D6F7B00B72791 /* DogCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogCollectionViewCell.h; sourceTree = "<group>"; };
+		FB229F46203D6F7B00B72791 /* DogCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogCollectionViewCell.m; sourceTree = "<group>"; };
+		FB229F48203D6F8B00B72791 /* ImagesCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagesCollectionViewCell.h; sourceTree = "<group>"; };
+		FB229F49203D6F8B00B72791 /* ImagesCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagesCollectionViewCell.m; sourceTree = "<group>"; };
+		FB3035962049444000B1DF58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FBCC8773202B001200A1860A /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FBCC8774202B001200A1860A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078053F2202A0C6F00D911C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB3035982049457200B1DF58 /* CoreLocation.framework in Frameworks */,
+				DBD0885050987C9D6B704E66 /* libPods-GeoWoof.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0780540D202A0C6F00D911C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8179EA68B122797DFCF4882C /* libPods-GeoWoofTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07805418202A0C6F00D911C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA174BB744B5D3227B686F62 /* libPods-GeoWoofUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078053EC202A0C6F00D911C0 = {
+			isa = PBXGroup;
+			children = (
+				078053F7202A0C6F00D911C0 /* GeoWoof */,
+				07805413202A0C6F00D911C0 /* GeoWoofTests */,
+				0780541E202A0C6F00D911C0 /* GeoWoofUITests */,
+				078053F6202A0C6F00D911C0 /* Products */,
+				DC18078FF3161CC0A7C3A1EB /* Pods */,
+				1AA2E80D73D13BAA3B80F0F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		078053F6202A0C6F00D911C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078053F5202A0C6F00D911C0 /* GeoWoof.app */,
+				07805410202A0C6F00D911C0 /* GeoWoofTests.xctest */,
+				0780541B202A0C6F00D911C0 /* GeoWoofUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		078053F7202A0C6F00D911C0 /* GeoWoof */ = {
+			isa = PBXGroup;
+			children = (
+				FB229F44203D6D7900B72791 /* Data Classes */,
+				FB229F43203D6D6400B72791 /* Cells */,
+				FB229F42203D6D0800B72791 /* ViewControllers */,
+				078053F8202A0C6F00D911C0 /* AppDelegate.h */,
+				078053F9202A0C6F00D911C0 /* AppDelegate.m */,
+				07805401202A0C6F00D911C0 /* Main.storyboard */,
+				07805404202A0C6F00D911C0 /* Assets.xcassets */,
+				07805406202A0C6F00D911C0 /* LaunchScreen.storyboard */,
+				07805409202A0C6F00D911C0 /* Info.plist */,
+				07490D62202CA97B0013ECAB /* GoogleService-Info.plist */,
+				0780540A202A0C6F00D911C0 /* main.m */,
+			);
+			path = GeoWoof;
+			sourceTree = "<group>";
+		};
+		07805413202A0C6F00D911C0 /* GeoWoofTests */ = {
+			isa = PBXGroup;
+			children = (
+				07805414202A0C6F00D911C0 /* GeoWoofTests.m */,
+				07805416202A0C6F00D911C0 /* Info.plist */,
+			);
+			path = GeoWoofTests;
+			sourceTree = "<group>";
+		};
+		0780541E202A0C6F00D911C0 /* GeoWoofUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0780541F202A0C6F00D911C0 /* GeoWoofUITests.m */,
+				07805421202A0C6F00D911C0 /* Info.plist */,
+			);
+			path = GeoWoofUITests;
+			sourceTree = "<group>";
+		};
+		1AA2E80D73D13BAA3B80F0F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB3035962049444000B1DF58 /* CoreLocation.framework */,
+				BE7A553B94A01FA8BB7D0578 /* libPods-GeoWoof.a */,
+				5B4DA2860410BF6FF94159A2 /* libPods-GeoWoofTests.a */,
+				ED8D30C3535935529498CE6E /* libPods-GeoWoofUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC18078FF3161CC0A7C3A1EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A33224BA6BEE1D36DEC5452C /* Pods-GeoWoof.debug.xcconfig */,
+				0CCB649AA27D8E10EC82B932 /* Pods-GeoWoof.release.xcconfig */,
+				3CBE909BF089642863AA9D05 /* Pods-GeoWoofTests.debug.xcconfig */,
+				8E4CFD4577E1F61A33B791C0 /* Pods-GeoWoofTests.release.xcconfig */,
+				5EF8809052EE6C46907D06EA /* Pods-GeoWoofUITests.debug.xcconfig */,
+				7732B2B086D9CB611664AEF9 /* Pods-GeoWoofUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB229F42203D6D0800B72791 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0780542D202A12EF00D911C0 /* ProfileViewController.h */,
+				0780542E202A12EF00D911C0 /* ProfileViewController.m */,
+				078CBC09202A300C000EB952 /* DogListTableViewController.h */,
+				078CBC0A202A300C000EB952 /* DogListTableViewController.m */,
+				FBCC8773202B001200A1860A /* LoginViewController.h */,
+				FBCC8774202B001200A1860A /* LoginViewController.m */,
+				07FE2E7F202CE367007FC7D0 /* TourAppPageViewController.h */,
+				07FE2E80202CE367007FC7D0 /* TourAppPageViewController.m */,
+				07FE2E85202CE66B007FC7D0 /* TourViewController.h */,
+				07FE2E86202CE66B007FC7D0 /* TourViewController.m */,
+				0727CF7F20362ABE00359C18 /* DogProfileViewController.h */,
+				0727CF8020362ABE00359C18 /* DogProfileViewController.m */,
+				0727CF8220362D6400359C18 /* EditProfileViewController.h */,
+				0727CF8320362D6400359C18 /* EditProfileViewController.m */,
+				0727CF8520363D2700359C18 /* FindTableViewController.h */,
+				0727CF8620363D2700359C18 /* FindTableViewController.m */,
+				FB045C7120400E4800ABA812 /* WatchProfileViewController.h */,
+				FB045C7220400E4800ABA812 /* WatchProfileViewController.m */,
+				0757807F2045D0A100610EAF /* MapViewController.h */,
+				075780802045D0A100610EAF /* MapViewController.m */,
+				075780822046332600610EAF /* EditProfilePopOverViewController.h */,
+				075780832046332600610EAF /* EditProfilePopOverViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB229F43203D6D6400B72791 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB229F45203D6F7B00B72791 /* DogCollectionViewCell.h */,
+				FB229F46203D6F7B00B72791 /* DogCollectionViewCell.m */,
+				078CBC12202A3612000EB952 /* DogCell.h */,
+				078CBC13202A3612000EB952 /* DogCell.m */,
+				0727CF8820363D4900359C18 /* ProfileCell.h */,
+				0727CF8920363D4900359C18 /* ProfileCell.m */,
+				FB229F48203D6F8B00B72791 /* ImagesCollectionViewCell.h */,
+				FB229F49203D6F8B00B72791 /* ImagesCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FB229F44203D6D7900B72791 /* Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				078CBC0C202A3050000EB952 /* Profile.h */,
+				078CBC0D202A3050000EB952 /* Profile.m */,
+				078CBC15202A3E36000EB952 /* Dog.h */,
+				078CBC16202A3E36000EB952 /* Dog.m */,
+				FB045C742040155C00ABA812 /* Route.h */,
+				FB045C752040155C00ABA812 /* Route.m */,
+			);
+			path = "Data Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		078053F4202A0C6F00D911C0 /* GeoWoof */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07805424202A0C6F00D911C0 /* Build configuration list for PBXNativeTarget "GeoWoof" */;
+			buildPhases = (
+				1ABA1C7A7D892AF8C43F1F43 /* [CP] Check Pods Manifest.lock */,
+				078053F1202A0C6F00D911C0 /* Sources */,
+				078053F2202A0C6F00D911C0 /* Frameworks */,
+				078053F3202A0C6F00D911C0 /* Resources */,
+				222B8090E5289042A49CED35 /* [CP] Embed Pods Frameworks */,
+				3002AB0A03136531BAE01EE5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoWoof;
+			productName = GeoWoof;
+			productReference = 078053F5202A0C6F00D911C0 /* GeoWoof.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0780540F202A0C6F00D911C0 /* GeoWoofTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07805427202A0C6F00D911C0 /* Build configuration list for PBXNativeTarget "GeoWoofTests" */;
+			buildPhases = (
+				FB6563DCDB0F4D7D29C26E13 /* [CP] Check Pods Manifest.lock */,
+				0780540C202A0C6F00D911C0 /* Sources */,
+				0780540D202A0C6F00D911C0 /* Frameworks */,
+				0780540E202A0C6F00D911C0 /* Resources */,
+				B4A00A56CD7B0A324E50A15F /* [CP] Embed Pods Frameworks */,
+				D9AACC8A3AD9A8C8FE989A07 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07805412202A0C6F00D911C0 /* PBXTargetDependency */,
+			);
+			name = GeoWoofTests;
+			productName = GeoWoofTests;
+			productReference = 07805410202A0C6F00D911C0 /* GeoWoofTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0780541A202A0C6F00D911C0 /* GeoWoofUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0780542A202A0C6F00D911C0 /* Build configuration list for PBXNativeTarget "GeoWoofUITests" */;
+			buildPhases = (
+				3D2D0AFE61DBD3D31CA75896 /* [CP] Check Pods Manifest.lock */,
+				07805417202A0C6F00D911C0 /* Sources */,
+				07805418202A0C6F00D911C0 /* Frameworks */,
+				07805419202A0C6F00D911C0 /* Resources */,
+				380A7F0607F592EB21F307FB /* [CP] Embed Pods Frameworks */,
+				5027C8305FEB7066889204C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0780541D202A0C6F00D911C0 /* PBXTargetDependency */,
+			);
+			name = GeoWoofUITests;
+			productName = GeoWoofUITests;
+			productReference = 0780541B202A0C6F00D911C0 /* GeoWoofUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078053ED202A0C6F00D911C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Eric Garcia Rodriguez";
+				TargetAttributes = {
+					078053F4202A0C6F00D911C0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					0780540F202A0C6F00D911C0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 078053F4202A0C6F00D911C0;
+					};
+					0780541A202A0C6F00D911C0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 078053F4202A0C6F00D911C0;
+					};
+				};
+			};
+			buildConfigurationList = 078053F0202A0C6F00D911C0 /* Build configuration list for PBXProject "GeoWoof" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078053EC202A0C6F00D911C0;
+			productRefGroup = 078053F6202A0C6F00D911C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078053F4202A0C6F00D911C0 /* GeoWoof */,
+				0780540F202A0C6F00D911C0 /* GeoWoofTests */,
+				0780541A202A0C6F00D911C0 /* GeoWoofUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		078053F3202A0C6F00D911C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07805408202A0C6F00D911C0 /* LaunchScreen.storyboard in Resources */,
+				07490D63202CA97B0013ECAB /* GoogleService-Info.plist in Resources */,
+				07805405202A0C6F00D911C0 /* Assets.xcassets in Resources */,
+				07805403202A0C6F00D911C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0780540E202A0C6F00D911C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07805419202A0C6F00D911C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ABA1C7A7D892AF8C43F1F43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoWoof-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		222B8090E5289042A49CED35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoof/Pods-GeoWoof-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3002AB0A03136531BAE01EE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoof/Pods-GeoWoof-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoof/Pods-GeoWoof-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		380A7F0607F592EB21F307FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoofUITests/Pods-GeoWoofUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D2D0AFE61DBD3D31CA75896 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoWoofUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5027C8305FEB7066889204C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoofUITests/Pods-GeoWoofUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A00A56CD7B0A324E50A15F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoofTests/Pods-GeoWoofTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AACC8A3AD9A8C8FE989A07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoWoofTests/Pods-GeoWoofTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6563DCDB0F4D7D29C26E13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoWoofTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078053F1202A0C6F00D911C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCC8775202B001200A1860A /* LoginViewController.m in Sources */,
+				FB045C7320400E4800ABA812 /* WatchProfileViewController.m in Sources */,
+				078CBC0B202A300C000EB952 /* DogListTableViewController.m in Sources */,
+				FB045C762040155C00ABA812 /* Route.m in Sources */,
+				FB229F4A203D6F8B00B72791 /* ImagesCollectionViewCell.m in Sources */,
+				07FE2E81202CE367007FC7D0 /* TourAppPageViewController.m in Sources */,
+				078CBC0E202A3050000EB952 /* Profile.m in Sources */,
+				07FE2E87202CE66B007FC7D0 /* TourViewController.m in Sources */,
+				0727CF8720363D2700359C18 /* FindTableViewController.m in Sources */,
+				078CBC14202A3612000EB952 /* DogCell.m in Sources */,
+				0727CF8120362ABE00359C18 /* DogProfileViewController.m in Sources */,
+				078053FA202A0C6F00D911C0 /* AppDelegate.m in Sources */,
+				0727CF8A20363D4900359C18 /* ProfileCell.m in Sources */,
+				0727CF8420362D6400359C18 /* EditProfileViewController.m in Sources */,
+				078CBC17202A3E36000EB952 /* Dog.m in Sources */,
+				0780542F202A12EF00D911C0 /* ProfileViewController.m in Sources */,
+				075780812045D0A100610EAF /* MapViewController.m in Sources */,
+				0780540B202A0C6F00D911C0 /* main.m in Sources */,
+				075780842046332600610EAF /* EditProfilePopOverViewController.m in Sources */,
+				FB229F47203D6F7B00B72791 /* DogCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0780540C202A0C6F00D911C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07805415202A0C6F00D911C0 /* GeoWoofTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07805417202A0C6F00D911C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07805420202A0C6F00D911C0 /* GeoWoofUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07805412202A0C6F00D911C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078053F4202A0C6F00D911C0 /* GeoWoof */;
+			targetProxy = 07805411202A0C6F00D911C0 /* PBXContainerItemProxy */;
+		};
+		0780541D202A0C6F00D911C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 078053F4202A0C6F00D911C0 /* GeoWoof */;
+			targetProxy = 0780541C202A0C6F00D911C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07805401202A0C6F00D911C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07805402202A0C6F00D911C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07805406202A0C6F00D911C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07805407202A0C6F00D911C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07805422202A0C6F00D911C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07805423202A0C6F00D911C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07805425202A0C6F00D911C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33224BA6BEE1D36DEC5452C /* Pods-GeoWoof.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WBW6NCHP9R;
+				INFOPLIST_FILE = GeoWoof/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eric.GeoWoof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07805426202A0C6F00D911C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CCB649AA27D8E10EC82B932 /* Pods-GeoWoof.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WBW6NCHP9R;
+				INFOPLIST_FILE = GeoWoof/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eric.GeoWoof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07805428202A0C6F00D911C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBE909BF089642863AA9D05 /* Pods-GeoWoofTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoWoofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eric.GeoWoofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoWoof.app/GeoWoof";
+			};
+			name = Debug;
+		};
+		07805429202A0C6F00D911C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E4CFD4577E1F61A33B791C0 /* Pods-GeoWoofTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoWoofTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eric.GeoWoofTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoWoof.app/GeoWoof";
+			};
+			name = Release;
+		};
+		0780542B202A0C6F00D911C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EF8809052EE6C46907D06EA /* Pods-GeoWoofUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoWoofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eric.GeoWoofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoWoof;
+			};
+			name = Debug;
+		};
+		0780542C202A0C6F00D911C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7732B2B086D9CB611664AEF9 /* Pods-GeoWoofUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeoWoofUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = eric.GeoWoofUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoWoof;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078053F0202A0C6F00D911C0 /* Build configuration list for PBXProject "GeoWoof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07805422202A0C6F00D911C0 /* Debug */,
+				07805423202A0C6F00D911C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07805424202A0C6F00D911C0 /* Build configuration list for PBXNativeTarget "GeoWoof" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07805425202A0C6F00D911C0 /* Debug */,
+				07805426202A0C6F00D911C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07805427202A0C6F00D911C0 /* Build configuration list for PBXNativeTarget "GeoWoofTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07805428202A0C6F00D911C0 /* Debug */,
+				07805429202A0C6F00D911C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0780542A202A0C6F00D911C0 /* Build configuration list for PBXNativeTarget "GeoWoofUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0780542B202A0C6F00D911C0 /* Debug */,
+				0780542C202A0C6F00D911C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 078053ED202A0C6F00D911C0 /* Project object */;
+}
