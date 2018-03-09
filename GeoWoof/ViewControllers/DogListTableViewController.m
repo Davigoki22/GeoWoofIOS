@@ -27,7 +27,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    UIBarButtonItem* addButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(followAcc)]; //[[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonSystemItemAdd target:self action:@selector(followAcc)];
+    UIBarButtonItem* addButton = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addDog)]; //[[UIBarButtonItem alloc]initWithTitle:@"Add" style:UIBarButtonSystemItemAdd target:self action:@selector(followAcc)];
     self.navigationItem.rightBarButtonItem = addButton;
     
     
@@ -49,6 +49,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dogs count];
+}
+-(void)addDog{
+    [self performSegueWithIdentifier:@"addDogSegue" sender:self];
 }
 
 - (DogCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,6 +114,9 @@
     if ([[segue identifier] isEqualToString:@"dogDetail"]) {
         DogProfileViewController *dogDetailViewController = [segue destinationViewController];
         [dogDetailViewController setDog:self.dogs[[self.tableView indexPathForSelectedRow].row]];
+    }
+    if([[segue identifier] isEqualToString:@"addDogSegue"]){
+        
     }
     
 }

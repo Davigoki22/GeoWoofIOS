@@ -36,8 +36,8 @@
     [self.button addTarget:self action:@selector(startWalk) forControlEvents:UIControlEventTouchUpInside];
     [self.button setTitle:@"Start walk" forState:UIControlStateNormal];
     self.button.frame = CGRectMake(45, 500, 288, 50);
-    self.button.layer.borderColor = [UIColor grayColor].CGColor;
-    self.button.layer.borderWidth = 1.0;
+    //self.button.layer.borderColor = [UIColor grayColor].CGColor;
+    //self.button.layer.borderWidth = 1.0;
     self.button.layer.cornerRadius = 14.0;
     [self.button setTitleColor:[UIColor colorWithRed:0.99 green:0.18 blue:0.33 alpha:1.0] forState:UIControlStateNormal];
     [self.button setBackgroundColor:[UIColor whiteColor]];
@@ -122,7 +122,7 @@
         GMSCameraPosition * cpActual = [GMSCameraPosition cameraWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude zoom:70];
         [mapView animateWithCameraUpdate:[GMSCameraUpdate zoomIn]];
         [mapView animateToCameraPosition:cpActual];
-        [mapView setMinZoom:0 maxZoom:15];
+        [mapView setMinZoom:0 maxZoom:50];
         [radioVisible setPosition:location.coordinate];
         [path addCoordinate:location.coordinate];
         ruta = [GMSPolyline polylineWithPath:path];
@@ -130,10 +130,10 @@
         ruta.strokeColor= [UIColor colorWithRed:0.99 green:0.18 blue:0.33 alpha:1.0];
         if([locations count] < 3){
         }else{
-            distancia += [locations[0] distanceFromLocation:locations[2]];
+            //distancia += [locations[0] distanceFromLocation:locations[2]];
         }
         
-        //NSLog(@"Distancia recorrida: %f",distancia);
+        
         [laRuta addObject:location];
     }
     
@@ -160,6 +160,7 @@
         NSLog(@"true walk");
         [self.button setTitle:@"Start Walk" forState:UIControlStateNormal];
         [self showAlertWalkedWithDistance:[self calculateDistanceWalked]];
+        NSLog(@"Distancia recorrida: %f",distancia);
     }
     
 }

@@ -30,7 +30,7 @@
     [self initializeProfile];
     [self setScopeBarTitlesForDogsBreed];
     [self initializeProfilesToSearch];
-
+    [self.view endEditing:YES];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -43,16 +43,20 @@
     // Dispose of any resources that can be recreated.
 }
 
--(BOOL)resignFirstResponder{
-    return [self.sb_search becomeFirstResponder];
-}
+
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     [self filterListBySearchText:searchBar andSelectedScope:searchBar.selectedScopeButtonIndex];
+    if (!searchText.length) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [searchBar resignFirstResponder];
+        });
+    }
 }
 -(void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope{
     [self filterListBySearchText:searchBar andSelectedScope:selectedScope];
 }
+
 
 -(void)filterListBySearchText:(UISearchBar*)searchBar andSelectedScope:(NSInteger)selectedScope{
     if(searchBar.text.length  == 0){

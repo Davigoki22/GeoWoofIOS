@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0705987C20520257005A3760 /* CircularImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705987B20520257005A3760 /* CircularImageView.m */; };
 		0705987F2052300C005A3760 /* SeeLargeImagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0705987E2052300C005A3760 /* SeeLargeImagesViewController.m */; };
+		070598822052480F005A3760 /* AddDogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070598812052480F005A3760 /* AddDogViewController.m */; };
 		0727CF8120362ABE00359C18 /* DogProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8020362ABE00359C18 /* DogProfileViewController.m */; };
 		0727CF8420362D6400359C18 /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8320362D6400359C18 /* EditProfileViewController.m */; };
 		0727CF8720363D2700359C18 /* FindTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727CF8620363D2700359C18 /* FindTableViewController.m */; };
@@ -63,6 +64,8 @@
 		0705987B20520257005A3760 /* CircularImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularImageView.m; sourceTree = "<group>"; };
 		0705987D2052300C005A3760 /* SeeLargeImagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeeLargeImagesViewController.h; sourceTree = "<group>"; };
 		0705987E2052300C005A3760 /* SeeLargeImagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeLargeImagesViewController.m; sourceTree = "<group>"; };
+		070598802052480F005A3760 /* AddDogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddDogViewController.h; sourceTree = "<group>"; };
+		070598812052480F005A3760 /* AddDogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddDogViewController.m; sourceTree = "<group>"; };
 		0727CF7F20362ABE00359C18 /* DogProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DogProfileViewController.h; sourceTree = "<group>"; };
 		0727CF8020362ABE00359C18 /* DogProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DogProfileViewController.m; sourceTree = "<group>"; };
 		0727CF8220362D6400359C18 /* EditProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
@@ -274,6 +277,8 @@
 				075780832046332600610EAF /* EditProfilePopOverViewController.m */,
 				0705987D2052300C005A3760 /* SeeLargeImagesViewController.h */,
 				0705987E2052300C005A3760 /* SeeLargeImagesViewController.m */,
+				070598802052480F005A3760 /* AddDogViewController.h */,
+				070598812052480F005A3760 /* AddDogViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -613,6 +618,7 @@
 				0705987C20520257005A3760 /* CircularImageView.m in Sources */,
 				078CBC14202A3612000EB952 /* DogCell.m in Sources */,
 				0727CF8120362ABE00359C18 /* DogProfileViewController.m in Sources */,
+				070598822052480F005A3760 /* AddDogViewController.m in Sources */,
 				078053FA202A0C6F00D911C0 /* AppDelegate.m in Sources */,
 				0727CF8A20363D4900359C18 /* ProfileCell.m in Sources */,
 				0727CF8420362D6400359C18 /* EditProfileViewController.m in Sources */,
