@@ -13,6 +13,7 @@
 #import "DogCollectionViewCell.h"
 #import "ImagesCollectionViewCell.h"
 
+@import Photos;
 @import FirebaseAuth;
 
 @interface ProfileViewController ()
@@ -54,7 +55,6 @@
      <#code#>
      }
      */
-    
     self.iv_profile.layer.cornerRadius = self.iv_profile.frame.size.width / 2;
     self.iv_profile.clipsToBounds = YES;
     self.iv_profile.layer.borderColor = [UIColor whiteColor].CGColor;
@@ -165,6 +165,7 @@
     }]];
     
     [actionSheet addAction:[UIAlertAction actionWithTitle:@"Camera" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+
         if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
             
             UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"No camera found"
@@ -181,7 +182,7 @@
             UIImagePickerController *picker = [[UIImagePickerController alloc] init];
             picker.sourceType = UIImagePickerControllerSourceTypeCamera;
             picker.delegate = self;
-
+            [self presentViewController:picker animated:YES completion:nil];
         }
         
     }]];
@@ -197,19 +198,50 @@
     }]];
     // Present action sheet.
     [self presentViewController:actionSheet animated:YES completion:nil];
+    
 
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    NSURL* img = [info valueForKey:UIImagePickerControllerImageURL];
-    NSString* selectedImagePath = [img path];
-    
-    [self.profile.images insertObject:selectedImagePath atIndex:0];
-    [self.cv_photos reloadData];
+    if(picker.sourceType == UIImagePickerControllerSourceTypeCamera ){
+        [self dismissViewControllerAnimated:YES completion:nil];
+        UIImage *chosenImage = info[UIImagePickerControllerOriginalImage];
+        
+        
+
+        UIImageWriteToSavedPhotosAlbum(chosenImage, nil, nil, nil);
+        
+        
+        
+        PHFetchOptions *fetchOptions = [[PHFetchOptions alloc] init];
+        fetchOptions.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"creationDate" ascending:YES]];
+        PHFetchResult *fetchResult = [PHAsset fetchAssetsWithMediaType:PHAssetMediaTypeImage options:fetchOptions];
+        PHAsset *lastAsset = [fetchResult lastObject];
+        [lastAsset requestContentEditingInputWithOptions:[PHContentEditingInputRequestOptions new] completionHandler:^(PHContentEditingInput * contentEditingInput, NSDictionary * info) {
+            NSURL* urlImage = contentEditingInput.fullSizeImageURL;
+            NSString* selectedImagePath = [urlImage path];
+            NSArray* imagename = [selectedImagePath componentsSeparatedByString:@"/"];
+            NSString* imagenameFinal = [imagename objectAtIndex:imagename.count-1];
+            NSString* lastImage = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+            NSString* workspace = [lastImage stringByAppendingPathComponent:imagenameFinal];
+            self.iv_profile.image = [UIImage imageWithData:[NSData dataWithContentsOfFile:workspace]];
+            
+        }];
+        
+        
+
+    }else{
+        [self dismissViewControllerAnimated:YES completion:nil];
+         
+         NSURL* img = [info valueForKey:UIImagePickerControllerImageURL];
+         NSString* selectedImagePath = [img path];
+         
+         [self.profile.images insertObject:selectedImagePath atIndex:0];
+         [self.cv_photos reloadData];
+    }
 }
+
+    
 
 #pragma mark - Navigation
 
@@ -221,6 +253,38 @@
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+}
+
+-(NSString*)saveImageFromCamera:(UIImage*) image {
+    NSError *error;
+    NSFileManager *fileMgr = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
+    NSString *dataPath = [documentsDirectory stringByAppendingPathComponent:@"/YOUR_IMG_FOLDER"];
+    
+    if (![fileMgr fileExistsAtPath:dataPath])
+        [[NSFileManager defaultManager] createDirectoryAtPath:dataPath withIntermediateDirectories:NO attributes:nil error:&error]; //Create folder
+    
+    //Get the current date and time and set as image name
+    NSDate *now = [NSDate date];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = @"yyyy-MM-dd_HH-mm-ss";
+    [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
+    NSString *gmtTime = [dateFormatter stringFromDate:now];
+    NSLog(@"The Current Time is :%@", gmtTime);
+    
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.5); // _postImage is your image file and you can use JPEG representation or PNG as your wish
+    int imgSize = imageData.length;
+    ////NSLog(@"SIZE OF IMAGE: %.2f Kb", (float)imgSize/1024);
+    
+    NSString *imgfileName = [NSString stringWithFormat:@"%@gallery", [FIRAuth auth].currentUser.email, @".jpg"];
+    // File we want to create in the documents directory
+    NSString *imgfilePath= [dataPath stringByAppendingPathComponent:imgfileName];
+    // Write the file
+    [imageData writeToFile:imgfilePath atomically:YES];
+    
+    return imgfileName;
 }
 
 

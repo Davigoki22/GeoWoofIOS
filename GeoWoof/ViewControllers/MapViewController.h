@@ -12,5 +12,6 @@
 @interface MapViewController : UIViewController <CLLocationManagerDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *btn_start;
 @property UIButton* button;
+@property (weak, nonatomic) IBOutlet UIButton *buttonConstraints;
 
 @end
