@@ -19,6 +19,11 @@
     UIBarButtonItem* followButton = [[UIBarButtonItem alloc]initWithTitle:@"Follow" style:UIBarStyleDefault target:self action:@selector(followAcc)];
     [self showData];
     self.navigationItem.rightBarButtonItem = followButton;
+    
+    self.iv_profile.layer.cornerRadius = self.iv_profile.frame.size.width / 2;
+    self.iv_profile.clipsToBounds = YES;
+    self.iv_profile.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.iv_profile.layer.borderWidth = 1;
     // Do any additional setup after loading the view.
 }
 
@@ -40,7 +45,7 @@
     self.iv_profile.image = [UIImage imageNamed:self.profile.profileImage];
     self.iv_background.image = [UIImage imageNamed:self.profile.background];
     self.l_name.text = self.profile.name;
-    self.l_username.text = self.profile.username;
+    
 }
 
 @end

@@ -119,9 +119,17 @@
     
 }
 -(void)setScopeBarTitlesForDogsBreed{
+    int isEqual = 0;
     NSMutableArray* scopeTitles = [[NSMutableArray alloc]initWithObjects:@"All", nil];
     for (Dog* dog in self.profile.dogs) {
-        [scopeTitles addObject:dog.breed];
+        isEqual = 0;
+        for (int i=0;i<scopeTitles.count;i++) {
+            if([dog.breed isEqualToString:[scopeTitles objectAtIndex:i]]){
+                isEqual++;
+            }
+        }
+        if(isEqual == 0)
+            [scopeTitles addObject:dog.breed];
     }
     self.sb_search.scopeButtonTitles = scopeTitles;
     
@@ -151,8 +159,8 @@
     
     
     Profile* profile1 = [[Profile alloc]initWithUsername:@"davigoki" andName:@"David Barbé Losada" andImage:@"davidtest" andBackground:@"backgroundtest" andBiography:@"Hola soy la biografia de david" andPhone:@"691271096" andGender:nil andDogs:dogsArray1 andImages:nil];
-    Profile* profile2 = [[Profile alloc]initWithUsername:@"eric" andName:@"David Barbé Losada" andImage:@"davidtest" andBackground:@"backgroundtest" andBiography:@"Hola soy la biografia de david" andPhone:@"691271096" andGender:nil andDogs:dogsArray2 andImages:nil];
-    Profile* profile3 = [[Profile alloc]initWithUsername:@"ainoa" andName:@"David Barbé Losada" andImage:@"davidtest" andBackground:@"backgroundtest" andBiography:@"Hola soy la biografia de david" andPhone:@"691271096" andGender:nil andDogs:dogsArray3 andImages:nil];
+    Profile* profile2 = [[Profile alloc]initWithUsername:@"eric" andName:@"Eric Garcia Rodriguez" andImage:@"perrotest1" andBackground:@"backgroundtest" andBiography:@"Hola soy la biografia de david" andPhone:@"691271096" andGender:nil andDogs:dogsArray2 andImages:nil];
+    Profile* profile3 = [[Profile alloc]initWithUsername:@"ainoa" andName:@"Ainoa Apellido yOtroApellido" andImage:@"perrotest2" andBackground:@"backgroundtest" andBiography:@"Hola soy la biografia de david" andPhone:@"691271096" andGender:nil andDogs:dogsArray3 andImages:nil];
     
     self.profiles = [[NSMutableArray alloc]initWithObjects:profile1,profile2,profile3, nil];
 }

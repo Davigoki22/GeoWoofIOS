@@ -13,10 +13,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *iv_background;
 @property (weak, nonatomic) IBOutlet UIImageView *iv_profile;
 @property (weak, nonatomic) IBOutlet UILabel *l_name;
-@property (weak, nonatomic) IBOutlet UILabel *l_username;
+@property (weak, nonatomic) IBOutlet UILabel *l_username1;
 @property (weak, nonatomic) IBOutlet UICollectionView *cv_dogs;
+@property (weak, nonatomic) IBOutlet UICollectionView *cv_imagenes;
 @property (weak, nonatomic) IBOutlet UIButton *btn_watchDogs;
-@property (weak, nonatomic) IBOutlet UICollectionView *cv_images;
 
 
 @property Profile* profile;
