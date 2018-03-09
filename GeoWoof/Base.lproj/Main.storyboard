@@ -744,7 +744,6 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="iv_image" destination="95G-mW-Rob" id="tyb-GR-Ipc"/>
-                                            <segue destination="zPd-3l-mNB" kind="show" id="eGo-yR-InT"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -877,22 +876,37 @@
                         <outlet property="iv_profile" destination="fIY-Qj-dDg" id="h7i-wA-hUQ"/>
                         <outlet property="iv_profileBackground" destination="snp-Fd-HIH" id="8C1-ix-zAG"/>
                         <outlet property="l_name" destination="mec-q4-fyV" id="d93-uq-RNS"/>
+                        <segue destination="zPd-3l-mNB" kind="show" identifier="seeLargeImages" id="seF-As-D3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FKQ-Tg-7sb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="821.25" y="1180.9859154929577"/>
         </scene>
-        <!--View Controller-->
+        <!--See Large Images View Controller-->
         <scene sceneID="xNe-Wh-b2Z">
             <objects>
-                <viewController id="zPd-3l-mNB" sceneMemberID="viewController">
+                <viewController id="zPd-3l-mNB" customClass="SeeLargeImagesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fdK-Nl-0zU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="niw-4J-2uF">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="niw-4J-2uF" firstAttribute="top" secondItem="ec9-lN-Edo" secondAttribute="top" id="8KJ-Um-vMY"/>
+                            <constraint firstItem="niw-4J-2uF" firstAttribute="leading" secondItem="ec9-lN-Edo" secondAttribute="leading" id="bPj-Fq-kvC"/>
+                            <constraint firstItem="ec9-lN-Edo" firstAttribute="trailing" secondItem="niw-4J-2uF" secondAttribute="trailing" id="cOq-Ed-V0O"/>
+                            <constraint firstItem="ec9-lN-Edo" firstAttribute="bottom" secondItem="niw-4J-2uF" secondAttribute="bottom" id="viI-b6-Dql"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ec9-lN-Edo"/>
                     </view>
+                    <connections>
+                        <outlet property="iv_image" destination="niw-4J-2uF" id="hBc-JU-053"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9K-r6-KGX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

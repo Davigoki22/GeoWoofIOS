@@ -12,11 +12,14 @@
 #import "Profile.h"
 #import "DogCollectionViewCell.h"
 #import "ImagesCollectionViewCell.h"
+#import "SeeLargeImagesViewController.h"
 
 @import Photos;
 @import FirebaseAuth;
 
-@interface ProfileViewController ()
+@interface ProfileViewController (){
+    NSIndexPath* indexPathCellImages;
+}
 
 @end
 
@@ -132,11 +135,12 @@
 }
 
 
+
 #pragma UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    [self performSegueWithIdentifier:@"seeLargeImages" sender:indexPath];
 }
 
 - (IBAction)guardar:(UIStoryboardSegue *)segue
@@ -250,6 +254,13 @@
     if ([[segue identifier] isEqualToString:@"showDogs"]) {
         DogListTableViewController *dogsViewController = [segue destinationViewController];
         [dogsViewController setDogs:self.profile.dogs];
+    }
+    if([[segue identifier] isEqualToString:@"seeLargeImages"]){
+        SeeLargeImagesViewController* viewController = [segue destinationViewController];
+        NSIndexPath* indexPath1 = sender;
+        NSInteger integer = indexPath1.row;
+        [viewController setImage:[UIImage imageNamed:[self.profile.images objectAtIndex:integer]]];
+        
     }
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
